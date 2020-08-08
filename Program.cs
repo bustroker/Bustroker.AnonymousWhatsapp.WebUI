@@ -20,6 +20,11 @@ namespace Bustroker.AnonymousWhatsapp.WebUI
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    var herokuPort = Environment.GetEnvironmentVariable("PORT");
+                    if (!string.IsNullOrWhiteSpace(herokuPort))
+                    {
+                        webBuilder.UseUrls($"http://*:{herokuPort}");
+                    }
                     webBuilder.UseStartup<Startup>();
                 });
     }

@@ -1,0 +1,8 @@
+version: '3'
+services:
+  webui:
+    environment:
+      - PORT=5050
+    build: .
+    ports:
+      - "8080:5050"

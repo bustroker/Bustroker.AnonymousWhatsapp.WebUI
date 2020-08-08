@@ -1,0 +1,6 @@
+bin\
+obj\
+publish\
+Vagrantfile
+vagrant_provision.sh
+*.log
