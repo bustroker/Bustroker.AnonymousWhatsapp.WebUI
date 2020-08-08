@@ -37,3 +37,5 @@ Deploy the image
 ```
 heroku container:release web --app anonymous-whatsapp
 ```
+
+Browse to `https://anonymous-whatsapp.herokuapp.com/`

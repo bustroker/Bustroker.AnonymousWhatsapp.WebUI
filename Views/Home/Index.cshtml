@@ -1,7 +1,9 @@
-﻿<div class="text-center">
-    <h2 class="display-4">@ViewData["Title"]</h2>
-    <p>Abre un chat en whatsapp sin tener que añadir el número a tus contactos</p>
-    <input id="targetNumber" type="tel" name="number" placeholder="ej: 34666777888" autofocus/>
-    <p>El número debe incluir el código de pais sin ceros ni +. Por ejemplo, un número español (código +34): 34666777888</p>
-    <button onclick="redirectToWhatsapp()">Abre mi whatsapp con este número</button>
+﻿<div class="rounded-border whatsapp-font padding-top text-center whatsapp-dark-green-background-white-font">
+    <h3 class="display-4">@ViewData["Title"]</h3>
+    <h4>Abre un chat en tu whatsapp sin tener que añadir el número a tus contactos</h4>
+    <p><i>El número debe incluir el código de pais sin ceros ni +. Por ejemplo, un número español (código +34): 34666777888</i></p>
+    <input class="whatsapp-grey-background rounded-border padding-bottom" id="targetNumber" type="tel" name="number" placeholder="ej: 34666777888"/>
+    <br/>
+    <button class="whatsapp-grey-background whatsapp-super-dark-green-font-color rounded-border" onclick="redirectToWhatsapp()">Abrir whatsapp</button>
+    <p class="padding-top"><i>** Serás redirigido a <b><u>tu whatsapp</u></b>, con un chat abierto con el número que desees, <b><u>sin que que lo tengas que añadir a tus contactos</u></b></i></p>
 </div>

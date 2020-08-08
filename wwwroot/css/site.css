@@ -59,9 +59,44 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
+  /* Margin bottom by footer height (background-color: ) */
   margin-bottom: 60px;
 }
+
+.whatsapp-font {
+  font-family: "Helvetica";
+}
+
+.whatsapp-grey-background {
+  background-color: #ece5dd;
+}
+
+.whatsapp-super-dark-green-font-color {
+  color: #075e54;
+}
+
+.whatsapp-dark-green-background-white-font {
+  background-color: #128C7E;
+  color: #fff;
+}
+
+.whatsapp-light-green-background-white-font {
+  background-color: #25d366;
+  color: #fff;
+}
+
+.padding-top {
+  padding-top: 100px;
+}
+
+.padding-bottom {
+  margin-bottom: 25px;
+}
+
+.rounded-border {
+  border-radius: 50px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
