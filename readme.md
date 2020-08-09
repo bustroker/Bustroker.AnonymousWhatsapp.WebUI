@@ -10,16 +10,17 @@ docker-compose up
 In host machine (VM:8080 => localhost:8080) open browser to `localhost:8080`
 
 ## Deploy to heroku
-Add a remote to target heroku git repo, from repo root folder in Vagrant VM
+First, install heroku on Windows machine.
+Add a remote to target heroku git repo, from Windows
 ```
 heroku git:remote --app anonymous-whatsapp
 ```
 
-Then just push to heroku git repo
+Then login to heroku and just push to heroku git repo
 ```
+heroku login -i
 git push keroku master
 ```
-
 
 ## Deploy manually to heroku with keroku cli
 Go into vagrant VM
