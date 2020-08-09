@@ -10,7 +10,15 @@ docker-compose up
 In host machine (VM:8080 => localhost:8080) open browser to `localhost:8080`
 
 ## Deploy to heroku
-Automatic deployment in set in heroku so every new push to master branch is deployed.
+Add a remote to target heroku git repo, from repo root folder in Vagrant VM
+```
+heroku git:remote --app anonymous-whatsapp
+```
+
+Then just push to heroku git repo
+```
+git push keroku master
+```
 
 
 ## Deploy manually to heroku with keroku cli
