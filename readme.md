@@ -28,11 +28,6 @@ vagrant up
 vagrant ssh
 ```
 
-Build docker image
-```
-docker build -t bustroker.anonymouswhatsapp.webapi:v1 .
-```
-
 Login into heroku. `-i` flag to not use browser.
 Then login into heroku containers
 ```
@@ -40,7 +35,8 @@ heroku login -i
 heroku container:login
 ```
 
-Build current directory Dockerfile and push the image to heroku container registry, targeting the app created in heroku `anonymous-whatsapp`
+Build current directory Dockerfile and push the image to heroku container registry, targeting the app created in heroku `anonymous-whatsapp`. 
+Next command does it all.
 ```
 heroku container:push web --app anonymous-whatsapp
 ```
