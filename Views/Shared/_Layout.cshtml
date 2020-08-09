@@ -23,6 +23,10 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+
+        <!-- Share buttons placement: Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="addthis_inline_share_toolbox"></div>
+    
     </div>
 
     <footer class="border-top footer text-muted">
@@ -34,5 +38,9 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
+    
+    <!-- Share buttons script: Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2fbb90405afd7d"></script>
+
 </body>
 </html>

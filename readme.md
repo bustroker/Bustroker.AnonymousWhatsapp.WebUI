@@ -1,6 +1,9 @@
 ## Functional
 Enter the nomber and you are redirected to whatsapp to open a chat session with a number **without having to add it to your contacts.**
 
+### A note on Share buttons
+Generated with the website https://sharethis.com/
+
 ### Run local
 Run inside VM, using docker-compose (easier than the huge docker run command)
 ´´´
@@ -10,17 +13,13 @@ docker-compose up
 In host machine (VM:8080 => localhost:8080) open browser to `localhost:8080`
 
 ## Deploy to heroku
-First, install heroku on Windows machine.
-Add a remote to target heroku git repo, from Windows
-```
-heroku git:remote --app anonymous-whatsapp
-```
+To set automatic deployments to heroku, heroku.yml file needs to be set. This is the simplest case, just specifying Dockerfile to build (see heroku.yml)
 
-Then login to heroku and just push to heroku git repo
+To deploy, just push to master branch.
 ```
-heroku login -i
-git push keroku master
+git push origin master
 ```
+In heroku the result of build can be found.
 
 ## Deploy manually to heroku with keroku cli
 Go into vagrant VM
