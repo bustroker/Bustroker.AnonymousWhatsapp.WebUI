@@ -89,15 +89,23 @@ body {
   background-color: #dcf8c6;
 }
 
+.button-input-height {
+
+}
+
 .padding-top {
   padding-top: 50px;
 }
 
-.padding-bottom {
+.padding-top-bottom {
   margin-bottom: 25px;
 }
 
-.padding-top-bottom {
+.instructions {
+  padding-top: 25px;
+}
+
+.foot-note {
   padding-top: 80px;
   padding-bottom:15px;
 }
