@@ -4,6 +4,6 @@
 // Write your JavaScript code.
 
 function redirectToWhatsapp(){
-    let targetNumber = $("#targetNumber").val();
+    let targetNumber = $("#targetNumber").val().replace(/\s+/g, '');
     window.location.href = "https://api.whatsapp.com/send?phone=" + targetNumber;
 }
